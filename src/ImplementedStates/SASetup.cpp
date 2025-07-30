@@ -2,8 +2,9 @@
 
 // Define the behavior of the Idle state
 State SASetup::executeState(SystemVariables& sysVar) {
+    Serial.println("ENTERING STATE: SETUP");
 
-    return State::SETUP;
+    return State::ConnectWLAN; // Transition to the next state
 }
 
 // Static instance and registration
