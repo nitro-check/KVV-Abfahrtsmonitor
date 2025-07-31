@@ -9,33 +9,34 @@ class ImplementedHardware {
 
 private:
     //Pin assignment
-    static const int testPin = 5;
+    static const int testPin = 2;
     
 
     //Pin assignment for the knob
     static const int knobCLKPin = 34;
     static const int knobDTPin = 35;
-    static const int knobSWPin = 32;
+    static const int knobSWPin = 33;
 
     //Pin assignment for the display
-    static const int dR1Pin = 25; 
-    static const int dR2Pin = 14;
-    static const int dB1Pin = 27;
-    static const int dB2Pin = 13;
-    static const int dG1Pin = 26;
-    static const int dG2Pin = 12;
-    static const int dAPin = 23;
-    static const int dBPin = 19;
-    static const int dCPin = 5;
-    static const int dDPin = 17;
-    static const int dCLKPin = 16;
-    static const int dLATPin = 4;
-    static const int dOEPin = 15;
+    static const int dR1Pin = 19; 
+    static const int dR2Pin = 5;
+    static const int dB1Pin = 18;
+    static const int dB2Pin = 17;
+    static const int dG1Pin = 32;
+    static const int dG2Pin = 25;
+    static const int dAPin = 16;
+    static const int dBPin = 27;
+    static const int dCPin = 4;
+    static const int dDPin = 14; 
+    static const int dEPin = 26;
+    static const int dCLKPin = 23;
+    static const int dLATPin = 12;
+    static const int dOEPin = 22;
 
     //display parameters
-    static const int displayWitdh = 64;
-    static const int displayHeigth = 32;
-    static const int nomberOfPanels = 1;
+    static const int displayWidth = 64;
+    static const int displayHeight = 64;
+    static const int numberOfPanels = 3;
 
     //Instances of implemented Hardware
     iHTEST* test;
