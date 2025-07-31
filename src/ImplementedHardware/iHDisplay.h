@@ -2,7 +2,6 @@
 #include <Arduino.h>
 #include "../SystemVariables.h"
 #include <ESP32-HUB75-MatrixPanel-I2S-DMA.h>
-
 #include <Adafruit_GFX.h>
 
 class iHDisplay {
@@ -12,11 +11,15 @@ private:
     int dAPin, dBPin, dCPin, dDPin;
     int dCLKPin, dLATPin, dOEPin;
     int displayWidth, displayHeight, numberOfPanels;
+    MatrixPanel_I2S_DMA* matrix;
+    
 public:
     iHDisplay(int dR1Pin, int dR2Pin, int dB1Pin, int dB2Pin, int dG1Pin, int dG2Pin, 
                 int dAPin, int dBPin, int dCPin, int dDPin, 
                 int dCLKPin, int dLATPin, int dOEPin,
-                int displayWidth, int displayHeight, int numberOfDisplays);
+                int displayWidth, int displayHeight, int numberOfPanels);
     void setLastDisplayUpdate(long now);
     long getLastDisplayUpdate();
+
+    void writePopUp(String PopUpMsg);
 };
