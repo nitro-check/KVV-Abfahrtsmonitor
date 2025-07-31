@@ -10,7 +10,7 @@ State SAConnectWLAN::executeState(SystemVariables& sysVar) {
         Serial.print("WLAN-Verbindung wird aufgebaut");// Wait for the WLAN connection to be established
         delay(1000); // Adjust the delay as needed
     }
-    return State::ConnectWLAN; // Transition to the next state
+    return State::STARTUP; // Transition to the next state
 }
 
 // Static instance and registration

@@ -18,24 +18,24 @@ private:
     static const int knobSWPin = 32;
 
     //Pin assignment for the display
-    static const int dR1Pin = 12; 
-    static const int dR2Pin = 13;
-    static const int dB1Pin = 14;
-    static const int dB2Pin = 15;
-    static const int dG1Pin = 16;
-    static const int dG2Pin = 17;
-    static const int dAPin = 18;
+    static const int dR1Pin = 25; 
+    static const int dR2Pin = 14;
+    static const int dB1Pin = 27;
+    static const int dB2Pin = 13;
+    static const int dG1Pin = 26;
+    static const int dG2Pin = 12;
+    static const int dAPin = 23;
     static const int dBPin = 19;
-    static const int dCPin = 20;
-    static const int dDPin = 21;
-    static const int dCLKPin = 22;
-    static const int dLATPin = 23;
-    static const int dOEPin = 24;
+    static const int dCPin = 5;
+    static const int dDPin = 17;
+    static const int dCLKPin = 16;
+    static const int dLATPin = 4;
+    static const int dOEPin = 15;
 
     //display parameters
     static const int displayWitdh = 64;
-    static const int displayHeigth = 64;
-    static const int nomberOfPanels = 3;
+    static const int displayHeigth = 32;
+    static const int nomberOfPanels = 1;
 
     //Instances of implemented Hardware
     iHTEST* test;

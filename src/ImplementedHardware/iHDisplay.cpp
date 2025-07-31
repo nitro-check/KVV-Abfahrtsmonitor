@@ -60,6 +60,6 @@ long iHDisplay::getLastDisplayUpdate() {
 
 void iHDisplay::writePopUp(String PopUpMsg) {
     matrix->setTextColor(matrix->color565(255, 0, 0));
-    matrix->setCursor(28, 30);
+    matrix->setCursor(10, 10);
     matrix->print(PopUpMsg);
 }
